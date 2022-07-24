@@ -44,3 +44,5 @@ set_env.sh
 aws-secret.yaml
 env-configmap.yaml
 env-secret.yaml
+backend-feed-deployment.yaml
+backend-user-deployment.yaml

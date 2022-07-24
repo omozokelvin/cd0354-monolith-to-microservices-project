@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reverseproxy
+spec:
+  selector:
+    matchLabels:
+      run: reverseproxy
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: reverseproxy
+    spec:
+      containers:
+      - image: omozokelvin/reverseproxy
+        name: reverseproxy
+        imagePullPolicy: Always
+        resources: 
+          requests:
+            cpu: "500m"
+          limits:
+            cpu: "1000m"
+        ports:
+        - containerPort: 8080
