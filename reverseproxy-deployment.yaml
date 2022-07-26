@@ -13,7 +13,7 @@ spec:
         run: reverseproxy
     spec:
       containers:
-      - image: omozokelvin/reverseproxy
+      - image: omozokelvin/reverseproxy:v11
         name: reverseproxy
         imagePullPolicy: Always
         resources: 

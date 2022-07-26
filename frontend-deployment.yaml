@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: omozokelvin/udagram-frontend
+        image: omozokelvin/udagram-frontend:v2
         imagePullPolicy: Always  
         ports:
         - containerPort: 8100
